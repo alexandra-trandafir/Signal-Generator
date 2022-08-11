@@ -1,0 +1,14 @@
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __TRIANGLE_H
+#define __TRIANGLE_H
+#ifdef __cplusplus
+ extern "C" {
+#endif
+
+ void  Triangle_Wave_FormDAC1(char amplitude, char frequency);
+ void  Triangle_Wave_FormDAC2(char amplitude, char frequency);
+
+#ifdef __cplusplus
+}
+#endif
+#endif /*__ spi_H */

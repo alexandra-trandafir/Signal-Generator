@@ -1,0 +1,85 @@
+/* USER CODE BEGIN Includes */
+#include "main.h"
+#include "MCP4921.h"
+#include "stm32f3xx_hal.h"
+#include "sinewave.h"
+#include "triangle.h"
+#include "sawtooth.h"
+#include "waves.h"
+//#include "Mikro_e_4_LCD.h"
+/* USER CODE END Includes */
+/* USER CODE BEGIN 0 */ 
+
+unsigned char old_n =0;
+unsigned char old_m =0;
+extern char Signal_Direction;  
+
+void Waves_CH1 (unsigned char Signal_Type, unsigned long int Amplitude, unsigned long int Frequency, unsigned long int Offset)
+{
+  Amplitude =Amplitude/19;
+  
+  if (old_n!= Signal_Type)
+  {
+    TEMP_DAC_Value =0;
+    Signal_Direction =1;
+  }
+  switch (Signal_Type)
+  {
+  case  0: 	//SIN
+    old_n = Signal_Type;
+    generate_Sinus(Amplitude, Frequency);
+    break;
+  case 1 :     	//Triangle
+    old_n = Signal_Type;
+    Triangle_Wave_FormDAC1(Amplitude,  Frequency); 
+    break;
+  case 2 :     	//SAW
+    old_n = Signal_Type;
+    break;
+  case 3:       //PWM
+    old_n = Signal_Type;
+    TEMP_DAC_ValueSelect(Amplitude, Frequency);
+    break; 
+  case DC:      // DC Only using OFFSET
+    old_m = Signal_Type;
+    TEMP_DAC_Value = Offset;
+    break;
+  default:break ; 
+  } 
+}
+
+ void Waves_CH2(unsigned char Signal_Type, unsigned long int Amplitude, unsigned long int Frequency, unsigned long int Offset)
+{
+    Amplitude =Amplitude/19;
+    
+  if (old_m!= Signal_Type)
+  {
+    DAC2_Value=0;
+    Signal_Direction =1;
+  }
+  switch (Signal_Type)
+  {
+      case  0: 	//SIN	  
+    old_m = Signal_Type;
+    generate_Sinus1(Amplitude, Frequency);
+    break;
+  case 1 : //Triangle
+    old_m = Signal_Type;
+    Triangle_Wave_FormDAC2(Amplitude, Frequency); 
+
+    break;
+  case  2:   	//SAW
+    old_n = Signal_Type;
+
+    break;
+  case 3: //PWM
+    old_m = Signal_Type;
+    DAC2_ValueSelect(Amplitude, Frequency);
+    break; 
+  case DC: // DC Only using OFFSET
+    old_m = Signal_Type;
+    DAC2_Value = Offset;
+    break; 
+  default:break ;
+ }
+}

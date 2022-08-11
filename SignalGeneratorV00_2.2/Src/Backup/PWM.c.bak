@@ -1,0 +1,44 @@
+#include "main.h"
+#include "PWM.h"
+#include "Encoder.h"
+#include "Mikro_e_4_LCD.h"
+
+int PWM_ON_Period1;
+int PWM_OFF_Period1;
+int Duty_cycle1;
+int PWM_Period1;
+int PWM_ON_Period2;
+int PWM_OFF_Period2;
+int Duty_cycle2;
+int PWM_Period2;
+int Amplitude_CH2_PWM;
+int DAC_Data2;
+int SPI_Frame_DAC2;
+
+void PWM1_duty_cycle(int Duty_cycle_CH1,  int PWM_Period_CH1, int Amplitude_CH2_PWM)
+{ 
+  Duty_cycle1=Duty_cycle_CH1;
+  PWM_Period1=PWM_Period_CH1;
+  PWM_ON_Period1=((Duty_cycle1* PWM_Period1)/100) ;
+  PWM_OFF_Period1=PWM_Period1-PWM_ON_Period1;           
+}  
+
+void PWM2_duty_cycle(int Duty_cycle_CH2, int PWM_Period_CH2, int Amplitude_CH2_PWM)
+{ 
+  if(PWM_Period_CH2<=100)
+  {
+    PWM_Period_CH2=100;
+  }
+  Duty_cycle2=Duty_cycle_CH2;
+  PWM_Period2=PWM_Period_CH2;
+  PWM_ON_Period2 =((Duty_cycle2* PWM_Period2)/100) ;
+  PWM_OFF_Period2=PWM_Period2-PWM_ON_Period2;   
+  if(SPI_Frame_DAC2 <= PWM_ON_Period2)
+  {
+    DAC_Data2 = Amplitude_CH2_PWM;
+  }
+  else if((SPI_Frame_DAC2 > PWM_ON_Period2 && (SPI_Frame_DAC2 <= PWM_OFF_Period2)))
+  {
+    DAC_Data2 = 0;
+  }  
+}  

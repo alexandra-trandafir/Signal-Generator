@@ -1,0 +1,673 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.4.261/W32 for ARM                  08/Sep/2020  00:09:29
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Exe\SignalGeneratorV00_2.2.out
+#    Map file     =
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\List\SignalGeneratorV00_2.2.map
+#    Command line =
+#        -f C:\Users\Adi\AppData\Local\Temp\EW90C8.tmp
+#        (C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\Encoder.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\gpio.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\main.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\MCP4921.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\Menu_navigation_LCD.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\Mikro_e_4_LCD.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\PWM.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\sawtooth.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\sinewave.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\spi.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\startup_stm32f303xe.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_cortex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_dma.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_flash.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_flash_ex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_gpio.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_i2c.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_i2c_ex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_msp.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_pwr.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_pwr_ex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_rcc.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_rcc_ex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_spi.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_spi_ex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_tim.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_tim_ex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_uart.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_hal_uart_ex.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\stm32f3xx_it.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\system_stm32f3xx.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\triangle.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\usart.o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj\waves.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Exe\SignalGeneratorV00_2.2.out
+#        --map
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\List\SignalGeneratorV00_2.2.map
+#        --config
+#        C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM/stm32f303xe_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x194
+  .intvec            ro code   0x800'0000   0x194  startup_stm32f303xe.o [1]
+                             - 0x800'0194   0x194
+
+"P1":                                      0x6777
+  .text              ro code   0x800'0194  0x1df4  Mikro_e_4_LCD.o [1]
+  .text              ro code   0x800'1f88   0x372  stm32f3xx_hal_gpio.o [1]
+  .text              ro code   0x800'22fa    0x3a  zero_init3.o [4]
+  .text              ro code   0x800'2334    0x28  stm32f3xx_hal.o [1]
+  .text              ro code   0x800'235c    0xa4  Menu_navigation_LCD.o [1]
+  .text              ro code   0x800'2400    0xd8  Encoder.o [1]
+  .text              ro code   0x800'24d8   0x140  main.o [1]
+  .text              ro code   0x800'2618     0xc  stm32f3xx_hal.o [1]
+  .text              ro code   0x800'2624    0x24  stm32f3xx_hal.o [1]
+  .text              ro code   0x800'2648   0x188  gpio.o [1]
+  .text              ro code   0x800'27d0    0x88  usart.o [1]
+  .text              ro code   0x800'2858    0xa4  spi.o [1]
+  .text              ro code   0x800'28fc   0x156  stm32f3xx_hal_cortex.o [1]
+  .text              ro code   0x800'2a54    0xb4  MCP4921.o [1]
+  .text              ro code   0x800'2b08   0x744  stm32f3xx_hal_rcc.o [1]
+  .text              ro code   0x800'324c   0x4d0  stm32f3xx_hal_rcc_ex.o [1]
+  .text              ro code   0x800'371c    0x40  stm32f3xx_hal.o [1]
+  .text              ro code   0x800'375c    0x8c  stm32f3xx_hal_msp.o [1]
+  .text              ro code   0x800'37e8   0x600  stm32f3xx_hal_uart.o [1]
+  .text              ro code   0x800'3de8   0x55c  stm32f3xx_hal_spi.o [1]
+  .text              ro code   0x800'4344   0x14c  waves.o [1]
+  .text              ro code   0x800'4490    0x4a  stm32f3xx_hal_dma.o [1]
+  .text              ro code   0x800'44da     0x2  stm32f3xx_hal_spi.o [1]
+  .text              ro code   0x800'44dc     0x2  stm32f3xx_hal_spi.o [1]
+  .text              ro code   0x800'44e0    0xa4  sinewave.o [1]
+  .text              ro code   0x800'4584    0x88  triangle.o [1]
+  .text              ro code   0x800'460c    0x44  sawtooth.o [1]
+  .rodata            const     0x800'4650  0x1000  sinewave.o [1]
+  .rodata            const     0x800'5650   0x400  Mikro_e_4_LCD.o [1]
+  .text              ro code   0x800'5a50   0x1b0  stm32f3xx_it.o [1]
+  .text              ro code   0x800'5c00    0x10  stm32f3xx_hal.o [1]
+  .rodata            const     0x800'5c10    0xac  stm32f3xx_hal_cortex.o [1]
+  .rodata            const     0x800'5cbc    0xac  stm32f3xx_hal_gpio.o [1]
+  .rodata            const     0x800'5d68    0xac  stm32f3xx_hal_rcc_ex.o [1]
+  .rodata            const     0x800'5e14    0xac  stm32f3xx_hal_uart.o [1]
+  .rodata            const     0x800'5ec0    0xa8  stm32f3xx_hal_rcc.o [1]
+  .rodata            const     0x800'5f68    0xa8  stm32f3xx_hal_spi.o [1]
+  .rodata            const     0x800'6010    0x80  spi.o [1]
+  .rodata            const     0x800'6090    0x80  usart.o [1]
+  .text              ro code   0x800'6110    0x80  system_stm32f3xx.o [1]
+  .text              ro code   0x800'6190    0x78  lz77_init_single.o [4]
+  .text              ro code   0x800'6208    0x28  data_init.o [4]
+  .text              ro code   0x800'6230    0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x800'6254    0x20  - Linker created -
+  .text              ro code   0x800'6274    0x1e  cmain.o [4]
+  .text              ro code   0x800'6292     0x4  low_level_init.o [2]
+  .text              ro code   0x800'6296     0x4  exit.o [2]
+  .text              ro code   0x800'629c     0xa  cexit.o [4]
+  .text              ro code   0x800'62a8    0x14  exit.o [5]
+  .text              ro code   0x800'62bc    0x10  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62cc     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'62d8     0x8  system_stm32f3xx.o [1]
+  .text              ro code   0x800'62e0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62e4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62e8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62ec     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62f0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62f4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62f8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'62fc     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6300     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6304     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6308     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'630c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6310     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6314     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6318     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'631c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6320     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6324     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6328     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'632c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6330     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6334     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6338     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'633c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6340     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6344     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6348     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'634c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6350     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6354     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6358     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'635c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6360     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6364     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6368     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'636c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6370     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6374     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6378     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'637c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6380     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6384     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6388     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'638c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6390     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6394     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6398     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'639c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63a0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63a4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63a8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63ac     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63b0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63b4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63b8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63bc     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63c0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63c4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63c8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63cc     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63d0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63d4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63d8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63dc     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63e0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63e4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63e8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63ec     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63f0     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63f4     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63f8     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'63fc     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6400     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6404     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6408     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'640c     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6410     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6414     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'6418     0x4  startup_stm32f303xe.o [1]
+  .text              ro code   0x800'641c     0x4  startup_stm32f303xe.o [1]
+  .rodata            const     0x800'6420     0x0  zero_init3.o [4]
+  .rodata            const     0x800'6420     0x0  lz77_init_single.o [4]
+  Initializer bytes  const     0x800'6420   0x4eb  <for P2-1>
+                             - 0x800'690b  0x6777
+
+"P2", part 1 of 3:                          0x7d5
+  P2-1                        0x2000'0000   0x7d5  <Init block>
+    .data            inited   0x2000'0000    0x14  Encoder.o [1]
+    .data            inited   0x2000'0014    0x18  Encoder.o [1]
+    .data            inited   0x2000'002c    0x14  MCP4921.o [1]
+    .data            inited   0x2000'0040    0x14  MCP4921.o [1]
+    .data            inited   0x2000'0054    0x10  Menu_navigation_LCD.o [1]
+    .data            inited   0x2000'0064    0x18  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'007c    0x84  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'0100    0x2c  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'012c    0x80  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'01ac    0x30  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'01dc    0xc0  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'029c    0x20  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'02bc   0x4fc  Mikro_e_4_LCD.o [1]
+    .data            inited   0x2000'07b8     0xc  stm32f3xx_hal.o [1]
+    .data            inited   0x2000'07c4     0xc  stm32f3xx_it.o [1]
+    .data            inited   0x2000'07d0     0x4  system_stm32f3xx.o [1]
+    .data            inited   0x2000'07d4     0x1  main.o [1]
+                            - 0x2000'07d5   0x7d5
+
+"P2", part 2 of 3:                          0x130
+  .bss               zero     0x2000'07d8    0x70  usart.o [1]
+  .bss               zero     0x2000'0848    0x64  spi.o [1]
+  .bss               zero     0x2000'08ac    0x10  Mikro_e_4_LCD.o [1]
+  .bss               zero     0x2000'08bc    0x10  Mikro_e_4_LCD.o [1]
+  .bss               zero     0x2000'08cc    0x10  Mikro_e_4_LCD.o [1]
+  .bss               zero     0x2000'08dc    0x10  Mikro_e_4_LCD.o [1]
+  .bss               zero     0x2000'08ec    0x10  sinewave.o [1]
+  .bss               zero     0x2000'08fc     0x4  MCP4921.o [1]
+  .bss               zero     0x2000'0900     0x4  MCP4921.o [1]
+  .bss               zero     0x2000'0904     0x2  waves.o [1]
+  .bss               zero     0x2000'0906     0x1  Menu_navigation_LCD.o [1]
+  .bss               zero     0x2000'0907     0x1  Mikro_e_4_LCD.o [1]
+                            - 0x2000'0908   0x130
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x2000'0908   0x400  <Block>
+    CSTACK           uninit   0x2000'0908   0x400  <Block tail>
+                            - 0x2000'0d08   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'690b   0x807'ffff  0x7'96f5
+  0x2000'07d5  0x2000'07d7       0x3
+  0x2000'0d08  0x2000'ffff    0xf2f8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x130:
+          0x2000'07d8  0x130
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x4eb (62% of destination):
+           0x800'6420  0x4eb
+    1 destination range, total size 0x7d5:
+          0x2000'0000  0x7d5
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj: [1]
+    Encoder.o                   216       27       44
+    MCP4921.o                   180       25       48
+    Menu_navigation_LCD.o       164       10       17
+    Mikro_e_4_LCD.o           7'668    2'202    1'941
+    gpio.o                      392
+    main.o                      320        1        1
+    sawtooth.o                   68
+    sinewave.o                  164    4'096       16
+    spi.o                       164      128      100
+    startup_stm32f303xe.o       740
+    stm32f3xx_hal.o             168        8       12
+    stm32f3xx_hal_cortex.o      342      172
+    stm32f3xx_hal_dma.o          74
+    stm32f3xx_hal_gpio.o        882      172
+    stm32f3xx_hal_msp.o         140
+    stm32f3xx_hal_rcc.o       1'860      168
+    stm32f3xx_hal_rcc_ex.o    1'232      172
+    stm32f3xx_hal_spi.o       1'376      168
+    stm32f3xx_hal_uart.o      1'536      172
+    stm32f3xx_it.o              432        7       12
+    system_stm32f3xx.o          128       11        4
+    triangle.o                  136
+    usart.o                     136      128      112
+    waves.o                     332                 2
+    -------------------------------------------------
+    Total:                   18'850    7'667    2'309
+
+dl7M_tlf.a: [2]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+m7M_tls.a: [3]
+    fpinit_M.o                   34
+    -------------------------------------------------
+    Total:                       34
+
+rt7M_tl.a: [4]
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    lz77_init_single.o          120
+    zero_init3.o                 58
+    -------------------------------------------------
+    Total:                      270
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          8        2
+    Linker created                        32    1'024
+-----------------------------------------------------
+    Grand Total:             19'190    7'701    3'333
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x800'6254           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'6274           --   Gb  - Linker created -
+?main                    0x800'6275          Code  Gb  cmain.o [4]
+AHBPrescTable            0x800'6180    0x10  Data  Gb  system_stm32f3xx.o [1]
+APBPrescTable            0x800'62d8     0x8  Data  Gb  system_stm32f3xx.o [1]
+Ampl_Vect               0x2000'025c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Amplitude_CH1           0x2000'00e0     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Amplitude_CH2           0x2000'00e4     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Busy                    0x2000'0064     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+CH1_Vect                0x2000'021c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+CH2_Vect                0x2000'022c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+CSTACK$$Base            0x2000'0908           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0d08           --   Gb  - Linker created -
+Clear_Line               0x800'1dcf    0x32  Code  Gb  Mikro_e_4_LCD.o [1]
+Continental              0x800'5650   0x400  Data  Gb  Mikro_e_4_LCD.o [1]
+Continental_logo_Scroll
+                         0x800'03d9    0x58  Code  Gb  Mikro_e_4_LCD.o [1]
+DAC2_Value              0x2000'0050     0x4  Data  Gb  MCP4921.o [1]
+DAC2_ValueSelect         0x800'462d    0x1c  Code  Gb  sawtooth.o [1]
+Digit1_Amplitude_CH1    0x2000'016c     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit1_Amplitude_CH2    0x2000'017c     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit1_Frequency_CH1    0x2000'00f0     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit1_Frequency_CH2    0x2000'015c     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit1_OFFset_CH1       0x2000'018c     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit1_OFFset_CH2       0x2000'019c     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit2_Amplitude_CH1    0x2000'0170     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit2_Amplitude_CH2    0x2000'0180     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit2_Frequency_CH1    0x2000'00f4     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit2_Frequency_CH2    0x2000'0160     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit2_OFFset_CH1       0x2000'0190     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit2_OFFset_CH2       0x2000'01a0     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit3_Amplitude_CH1    0x2000'0174     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit3_Amplitude_CH2    0x2000'0184     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit3_Frequency_CH1    0x2000'00f8     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit3_Frequency_CH2    0x2000'0164     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit3_OFFset_CH1       0x2000'0194     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit3_OFFset_CH2       0x2000'01cc     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit4_Amplitude_CH1    0x2000'0178     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit4_Amplitude_CH2    0x2000'0188     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit4_Frequency_CH1    0x2000'00fc     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit4_Frequency_CH2    0x2000'0168     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit4_OFFset_CH1       0x2000'0198     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Digit4_OFFset_CH2       0x2000'01d0     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Display_CH1_Signal_Type
+                         0x800'0b91    0xae  Code  Gb  Mikro_e_4_LCD.o [1]
+Display_CH2_Signal_Type
+                         0x800'0c41    0xac  Code  Gb  Mikro_e_4_LCD.o [1]
+ECD2_counts             0x2000'07c8     0x4  Data  Gb  stm32f3xx_it.o [1]
+ECD2_direction          0x2000'07c4     0x1  Data  Gb  stm32f3xx_it.o [1]
+ECD3_counts             0x2000'07cc     0x4  Data  Gb  stm32f3xx_it.o [1]
+ECD3_direction          0x2000'07c5     0x1  Data  Gb  stm32f3xx_it.o [1]
+EXTI15_10_IRQHandler     0x800'5a5f    0xe6  Code  Gb  stm32f3xx_it.o [1]
+Font                    0x2000'02bc   0x4fc  Data  Gb  Mikro_e_4_LCD.o [1]
+Freq_Vect               0x2000'024c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Frequency_CH1           0x2000'00d8     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Frequency_CH2           0x2000'00dc     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+GLCD_SET_Display_StartLine
+                         0x800'1ce7     0xc  Code  Gb  Mikro_e_4_LCD.o [1]
+GLCD_Write_Data          0x800'1edd    0x76  Code  Gb  Mikro_e_4_LCD.o [1]
+Get_ECD_Buton_State      0x800'2475    0x5a  Code  Gb  Encoder.o [1]
+Glcd_Fill                0x800'1e01    0xa2  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Init                0x800'1bc1    0x8a  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Select_Value        0x800'1d79    0x56  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Set_Page            0x800'1cd7    0x10  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Set_Side            0x800'1ea9    0x2e  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Write_Character     0x800'1cf3    0x2a  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Write_Character_Reverse
+                         0x800'1d1d    0x2a  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Write_Conti_image   0x800'0305    0xd4  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Write_Instruction   0x800'1c5f    0x78  Code  Gb  Mikro_e_4_LCD.o [1]
+Glcd_Write_String        0x800'1d4d    0x2c  Code  Gb  Mikro_e_4_LCD.o [1]
+HAL_DMA_Abort_IT         0x800'4491    0x4a  Code  Gb  stm32f3xx_hal_dma.o [1]
+HAL_Delay                0x800'2335    0x28  Code  Wk  stm32f3xx_hal.o [1]
+HAL_GPIO_EXTI_Callback   0x800'22f9     0x2  Code  Wk  stm32f3xx_hal_gpio.o [1]
+HAL_GPIO_Init            0x800'1f89   0x2dc  Code  Gb  stm32f3xx_hal_gpio.o [1]
+HAL_GPIO_ReadPin         0x800'2265    0x20  Code  Gb  stm32f3xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'2285    0x30  Code  Gb  stm32f3xx_hal_gpio.o [1]
+HAL_GetTick              0x800'2619     0xc  Code  Wk  stm32f3xx_hal.o [1]
+HAL_IncTick              0x800'5c01    0x10  Code  Wk  stm32f3xx_hal.o [1]
+HAL_Init                 0x800'2625    0x20  Code  Gb  stm32f3xx_hal.o [1]
+HAL_InitTick             0x800'371d    0x40  Code  Wk  stm32f3xx_hal.o [1]
+HAL_MspInit              0x800'375d    0x8c  Code  Gb  stm32f3xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ       0x800'29b9    0x1e  Code  Gb  stm32f3xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'293b    0x7e  Code  Gb  stm32f3xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'28fd    0x3e  Code  Gb  stm32f3xx_hal_cortex.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                         0x800'324d   0x4bc  Code  Gb  stm32f3xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig      0x800'2f8d   0x216  Code  Gb  stm32f3xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x800'31d5     0x6  Code  Gb  stm32f3xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'31db    0x10  Code  Gb  stm32f3xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'31eb     0xe  Code  Gb  stm32f3xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'31a5    0x30  Code  Gb  stm32f3xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'2b09   0x484  Code  Gb  stm32f3xx_hal_rcc.o [1]
+HAL_SPI_IRQHandler       0x800'40d1    0xfa  Code  Gb  stm32f3xx_hal_spi.o [1]
+HAL_SPI_Init             0x800'3de9   0x226  Code  Gb  stm32f3xx_hal_spi.o [1]
+HAL_SPI_MspInit          0x800'28a3    0x44  Code  Gb  spi.o [1]
+HAL_SPI_Transmit_IT      0x800'400f    0xa6  Code  Gb  stm32f3xx_hal_spi.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                         0x800'2a05    0x28  Code  Gb  stm32f3xx_hal_cortex.o [1]
+HAL_SYSTICK_Config       0x800'29e3    0x22  Code  Gb  stm32f3xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler   0x800'2a4d     0x4  Code  Gb  stm32f3xx_hal_cortex.o [1]
+HAL_UART_Init            0x800'37e9    0xa2  Code  Gb  stm32f3xx_hal_uart.o [1]
+HAL_UART_MspInit         0x800'2807    0x42  Code  Gb  usart.o [1]
+Hz_CH1                  0x2000'01d4     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Hz_CH2                  0x2000'01a4     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Init_all_Lines_at_Startup
+                         0x800'0195   0x170  Code  Gb  Mikro_e_4_LCD.o [1]
+KHz_CH1                 0x2000'01d8     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+KHz_CH2                 0x2000'01a8     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_1                 0x2000'009c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_2                 0x2000'013c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_3                 0x2000'007c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_4                 0x2000'01ac    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_5                 0x2000'08ac    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_6                 0x2000'08bc    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_7                 0x2000'01dc    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line1_8                 0x2000'01ec    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_1                 0x2000'014c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_2                 0x2000'029c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_3                 0x2000'08cc    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_4                 0x2000'012c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_5                 0x2000'08dc    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_6                 0x2000'01bc    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_7                 0x2000'01fc    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Line2_8                 0x2000'020c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+MX_GPIO_Init             0x800'2649   0x188  Code  Gb  gpio.o [1]
+MX_SPI3_Init             0x800'2859    0x4a  Code  Gb  spi.o [1]
+MX_USART2_UART_Init      0x800'27d1    0x36  Code  Gb  usart.o [1]
+Menu_navigation          0x800'235d    0xa4  Code  Gb  Menu_navigation_LCD.o [1]
+Modify_Amplitude_CH1     0x800'0721   0x11a  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_Amplitude_CH2     0x800'083b   0x11a  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_CH1_State         0x800'0431    0x4e  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_CH2_State         0x800'047f    0x50  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_Frequency_CH1     0x800'04d7   0x130  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_Frequency_CH2     0x800'0607   0x11a  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_OFFset_CH1        0x800'0955   0x116  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_OFFset_CH2        0x800'0a6b   0x104  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_Signal_Type       0x800'0b6f    0x20  Code  Gb  Mikro_e_4_LCD.o [1]
+Modify_position          0x800'18c7    0xb0  Code  Gb  Mikro_e_4_LCD.o [1]
+OFF_Vect                0x2000'02b4     0x8  Data  Gb  Mikro_e_4_LCD.o [1]
+OFFset_CH1              0x2000'00e8     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+OFFset_CH2              0x2000'00ec     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+ON_OFF                  0x2000'0065     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+ON_Vect                 0x2000'02ac     0x8  Data  Gb  Mikro_e_4_LCD.o [1]
+Offset_Vect             0x2000'026c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+PWM_Display              0x800'1aed    0x64  Code  Gb  Mikro_e_4_LCD.o [1]
+PWM_Vect                0x2000'011c     0x8  Data  Gb  Mikro_e_4_LCD.o [1]
+PortConfig_B             0x800'1b55    0x68  Code  Gb  Mikro_e_4_LCD.o [1]
+Region$$Table$$Base      0x800'6254           --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'6274           --   Gb  - Linker created -
+Reset                   0x2000'0066     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+SINE_TABLE               0x800'4650  0x1000  Data  Gb  sinewave.o [1]
+SPI3_IRQHandler          0x800'5b45    0x92  Code  Gb  stm32f3xx_it.o [1]
+SPIData_DAC1_Frame      0x2000'0030     0x4  Data  Gb  MCP4921.o [1]
+SPIData_DAC2_Frame      0x2000'0044     0x4  Data  Gb  MCP4921.o [1]
+SPI_CloseTx_ISR          0x800'42eb    0x58  Code  Lc  stm32f3xx_hal_spi.o [1]
+SPI_DAC1_UpdateRequest   0x800'2a79    0x3e  Code  Gb  MCP4921.o [1]
+SPI_DAC2_UpdateRequest   0x800'2ab7    0x3c  Code  Gb  MCP4921.o [1]
+SPI_DMAAbortOnError      0x800'41cd    0x10  Code  Lc  stm32f3xx_hal_spi.o [1]
+SPI_EndRxTxTransaction   0x800'421b    0x9c  Code  Lc  stm32f3xx_hal_spi.o [1]
+SPI_IT_DAC1_Counter     0x2000'08fc     0x4  Data  Gb  MCP4921.o [1]
+SPI_IT_DAC2_Counter     0x2000'0900     0x4  Data  Gb  MCP4921.o [1]
+SPI_TX1_Counter         0x2000'004c     0x4  Data  Gb  MCP4921.o [1]
+SPI_TX_Counter          0x2000'0038     0x4  Data  Gb  MCP4921.o [1]
+SPI_TX_DAC1_Ongoing     0x2000'0034     0x1  Data  Gb  MCP4921.o [1]
+SPI_TX_DAC2_Ongoing     0x2000'0048     0x1  Data  Gb  MCP4921.o [1]
+SPI_Transmit_table      0x2000'002c     0x2  Data  Gb  MCP4921.o [1]
+SPI_Transmit_table1     0x2000'0040     0x2  Data  Gb  MCP4921.o [1]
+SPI_TxISR_16BIT          0x800'41fb    0x20  Code  Lc  stm32f3xx_hal_spi.o [1]
+SPI_TxISR_8BIT           0x800'41dd    0x1e  Code  Lc  stm32f3xx_hal_spi.o [1]
+Saw_Display              0x800'1a8d    0x56  Code  Gb  Mikro_e_4_LCD.o [1]
+Saw_Vect                0x2000'0114     0x8  Data  Gb  Mikro_e_4_LCD.o [1]
+Select_Ampl_CH1         0x2000'0096     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Select_Ampl_CH2         0x2000'0097     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Select_Freq_CH1         0x2000'0094     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Select_Freq_CH2         0x2000'0095     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Select_OFFs_CH1         0x2000'0098     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Select_OFFs_CH2         0x2000'0099     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Select_first_digit      0x2000'0093     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Set_ECD_LED              0x800'2401    0x74  Code  Gb  Encoder.o [1]
+Sig_Vect                0x2000'023c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+Signal_Direction        0x2000'07d4     0x1  Data  Gb  main.o [1]
+Signal_type_CH1         0x2000'008e     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Signal_type_CH2         0x2000'008f     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Sin_Display              0x800'197b    0x9c  Code  Gb  Mikro_e_4_LCD.o [1]
+Sin_Vect                0x2000'010c     0x8  Data  Gb  Mikro_e_4_LCD.o [1]
+Sine_index              0x2000'08f0     0x4  Data  Gb  sinewave.o [1]
+State_CH1               0x2000'008c     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+State_CH1_Vect          0x2000'027c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+State_CH2               0x2000'008d     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+State_CH2_Vect          0x2000'028c    0x10  Data  Gb  Mikro_e_4_LCD.o [1]
+SysTick_Handler          0x800'5a51     0xe  Code  Gb  stm32f3xx_it.o [1]
+SystemClock_Config       0x800'256d    0x84  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'07d0     0x4  Data  Gb  system_stm32f3xx.o [1]
+SystemInit               0x800'6111    0x58  Code  Gb  system_stm32f3xx.o [1]
+TEMP_DAC_Value          0x2000'003c     0x4  Data  Gb  MCP4921.o [1]
+TEMP_DAC_ValueSelect     0x800'460d    0x20  Code  Gb  sawtooth.o [1]
+Tri_Vect                0x2000'0104     0x8  Data  Gb  Mikro_e_4_LCD.o [1]
+Triangle_Display         0x800'1a1d    0x66  Code  Gb  Mikro_e_4_LCD.o [1]
+Triangle_Wave_FormDAC1   0x800'4585    0x3c  Code  Gb  triangle.o [1]
+Triangle_Wave_FormDAC2   0x800'45c1    0x3a  Code  Gb  triangle.o [1]
+UART_AdvFeatureConfig    0x800'3b57   0x1e8  Code  Gb  stm32f3xx_hal_uart.o [1]
+UART_CheckIdleState      0x800'3d41    0x7c  Code  Gb  stm32f3xx_hal_uart.o [1]
+UART_SetConfig           0x800'38b9   0x29e  Code  Gb  stm32f3xx_hal_uart.o [1]
+Update_Display_Values    0x800'0d35   0xb92  Code  Gb  Mikro_e_4_LCD.o [1]
+Update_SPI_Transmit_table
+                         0x800'2a55     0x4  Code  Gb  MCP4921.o [1]
+Update_SPI_Transmit_table1
+                         0x800'2a59     0x2  Code  Gb  MCP4921.o [1]
+Updated_CH1_Signal_Graph
+                        0x2000'009a     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Updated_CH2_Signal_Graph
+                        0x2000'0100     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+Waves_CH1                0x800'4345    0x98  Code  Gb  waves.o [1]
+Waves_CH2                0x800'43dd    0x98  Code  Gb  waves.o [1]
+_Error_Handler           0x800'2615     0x2  Code  Gb  main.o [1]
+__cmain                  0x800'6275          Code  Gb  cmain.o [4]
+__exit                   0x800'62a9    0x14  Code  Gb  exit.o [5]
+__iar_data_init3         0x800'6209    0x28  Code  Gb  data_init.o [4]
+__iar_init_vfp           0x800'6231          Code  Gb  fpinit_M.o [3]
+__iar_lz77_init_single3
+                         0x800'6191    0x78  Code  Gb  lz77_init_single.o [4]
+__iar_program_start      0x800'62cd          Code  Gb  cstartup_M.o [4]
+__iar_zero_init3         0x800'22fb    0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'6293     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000          Data  Gb  startup_stm32f303xe.o [1]
+_call_main               0x800'6281          Code  Gb  cmain.o [4]
+_exit                    0x800'629d          Code  Gb  cexit.o [4]
+_main                    0x800'628f          Code  Gb  cmain.o [4]
+aPLLMULFactorTable       0x800'322c    0x10  Data  Gb  stm32f3xx_hal_rcc.o [1]
+aPredivFactorTable       0x800'323c    0x10  Data  Gb  stm32f3xx_hal_rcc.o [1]
+assert_failed            0x800'2617     0x2  Code  Gb  main.o [1]
+aux_adress              0x2000'00b8     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+button_led_pins         0x2000'0014     0x8  Data  Gb  Encoder.o [1]
+button_led_ports        0x2000'001c    0x10  Data  Gb  Encoder.o [1]
+buttons_pins            0x2000'0008     0x4  Data  Gb  Encoder.o [1]
+buttons_ports           0x2000'000c     0x8  Data  Gb  Encoder.o [1]
+data                    0x2000'00d0     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+delay_LCD                0x800'1c4b    0x14  Code  Gb  Mikro_e_4_LCD.o [1]
+direction               0x2000'00cc     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+exit                     0x800'6297     0x4  Code  Gb  exit.o [2]
+generate_Sinus           0x800'44e1    0x4a  Code  Gb  sinewave.o [1]
+generate_Sinus1          0x800'452b    0x44  Code  Gb  sinewave.o [1]
+generate_Sinus1::phase_acc
+                        0x2000'08f8     0x4  Data  Lc  sinewave.o [1]
+generate_Sinus::phase_acc
+                        0x2000'08f4     0x4  Data  Lc  sinewave.o [1]
+hspi3                   0x2000'0848    0x64  Data  Gb  spi.o [1]
+huart2                  0x2000'07d8    0x70  Data  Gb  usart.o [1]
+i                       0x2000'0128     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+lcd_adress              0x2000'00bc     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+led_color               0x2000'0090     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+main                     0x800'24d9    0x94  Code  Gb  main.o [1]
+menu_CH                 0x2000'0054     0x1  Data  Gb  Menu_navigation_LCD.o [1]
+menu_navigation         0x2000'0058     0xc  Data  Gb  Menu_navigation_LCD.o [1]
+menu_pos                0x2000'0055     0x1  Data  Gb  Menu_navigation_LCD.o [1]
+menu_state              0x2000'0906     0x1  Data  Gb  Menu_navigation_LCD.o [1]
+modify_option_on        0x2000'0091     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+modify_value            0x2000'0092     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+old_m                   0x2000'0905     0x1  Data  Gb  waves.o [1]
+old_n                   0x2000'0904     0x1  Data  Gb  waves.o [1]
+page                    0x2000'00c0     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+phase_add               0x2000'08ee     0x2  Data  Gb  sinewave.o [1]
+position                0x2000'00d4     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+pressed                 0x2000'0000     0x4  Data  Gb  Encoder.o [1]
+released                0x2000'0004     0x4  Data  Gb  Encoder.o [1]
+temp_BSRR               0x2000'0070     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_BSRR_test1         0x2000'0074     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_BSRR_test2         0x2000'0078     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_character          0x2000'0124     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_data               0x2000'0068     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_data_table         0x2000'0907     0x1  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_data_w             0x2000'006c     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_data_x             0x2000'00b0     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_data_y             0x2000'00ac     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+temp_data_z             0x2000'00b4     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+uwTick                  0x2000'07bc     0x4  Data  Gb  stm32f3xx_hal.o [1]
+uwTickFreq              0x2000'07b8     0x1  Data  Gb  stm32f3xx_hal.o [1]
+uwTickPrio              0x2000'07c0     0x4  Data  Gb  stm32f3xx_hal.o [1]
+x                       0x2000'08ec     0x1  Data  Gb  sinewave.o [1]
+xpos                    0x2000'00c4     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+ypos                    0x2000'00c8     0x4  Data  Gb  Mikro_e_4_LCD.o [1]
+
+
+[1] = C:\Users\Adi\STM32CubeIDE\workspace_1.0.1\Alexandra\20_10_19_WORKING_SignalGeneratorV00_2.2\SignalGeneratorV00_2.2\EWARM\SignalGeneratorV00_2.2\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  19'190 bytes of readonly  code memory
+   7'701 bytes of readonly  data memory
+   3'333 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

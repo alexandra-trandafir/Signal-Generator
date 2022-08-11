@@ -1,0 +1,25 @@
+#ifndef __PWM_H__
+#define __PWM_H__
+
+extern int PWM_ON_Period1;
+extern int PWM_OFF_Period1;
+extern int Duty_cycle1;
+extern int PWM_Period1;
+//extern int Amplitude_CH1;
+extern int Dac_Data1;
+extern int SPI_Framre_Dac1;
+
+extern int PWM_ON_Period2;
+extern int PWM_OFF_Period2;
+extern int Duty_cycle2;
+extern int PWM_Period2;
+//extern int Amplitude_CH2;
+extern int DAC_Data2;
+extern int SPI_Frame_DAC2;
+
+
+void PWM1_duty_cycle(unsigned long int  Duty_cycle_CH1,  unsigned long int  PWM_Period_CH1, unsigned long int Amplitude_CH1_PWM, unsigned long int Offset_CH1);
+void PWM2_duty_cycle(unsigned long int  Duty_cycle_CH2, unsigned long int  PWM_Period_CH2, unsigned long int  Amplitude_CH2_PWM, unsigned long int Offset_CH2);
+
+
+#endif /* __PWM_H__ */
